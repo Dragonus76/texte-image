@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>texte & image </title>
+</head>
+<body>
+
+	<style type="text/css">
+		
+img{
+
+	width: 500px;
+	height: 500px
+}
+
+	</style>
+
+
+	<img id="montagne" src="sex1.gif">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#montagne').mouseover(function() {
+      $(this).attr('src','sex1.gif');
+    });
+    $('#montagne').mouseout(function() {
+      $(this).attr('src','sex.jpg');
+    });
+  }); 
+</script>
+
+
+</body>
+</html>
